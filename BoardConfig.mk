@@ -90,6 +90,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 53074673152 # 53074705920 − 32768
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := /sys/android_touch/doubletap2wake
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
