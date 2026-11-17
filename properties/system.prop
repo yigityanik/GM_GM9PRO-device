@@ -13,7 +13,6 @@ ro.telephony.default_network=9,0
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=1
 debug.sf.latch_unsignaled=1
-debug.gralloc.enable_fb_ubwc=1
 persist.demo.hdmirotationlock=false
 
 #Property to enable display default color mode
