@@ -33,8 +33,7 @@
 #define MSINSEC 1000L
 #define USINMS 1000000L
 
-static const std::vector<std::string> fb_idle_path = {"/sys/class/drm/card0/device/idle_state",
-                                                       "/sys/class/graphics/fb0/idle_state"};
+static const std::vector<std::string> fb_idle_path = {"/sys/class/graphics/fb0/idle_notify"};
 
 InteractionHandler::InteractionHandler(std::shared_ptr<HintManager> const &hint_manager)
     : mState(INTERACTION_STATE_UNINITIALIZED),
@@ -231,7 +230,7 @@ void InteractionHandler::WaitForIdle(int32_t wait_ms, int32_t timeout_ms) {
         return;
     }
 
-    if (!strncmp(data, "idle", 4)) {
+    if (!strncmp(data, "yes", 3)) {
         ALOGV("%s: already idle", __func__);
         return;
     }
