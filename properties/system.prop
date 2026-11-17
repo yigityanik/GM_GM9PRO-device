@@ -21,7 +21,6 @@ vendor.display.enable_default_color_mode=1
 
 # Display Properties as per treble compliance
 vendor.gralloc.enable_fb_ubwc=1
-vendor.display.disable_skip_validate=1
 
 #
 # system props for the cne module
