@@ -95,8 +95,10 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
         case Mode::SUSTAINED_PERFORMANCE:
             if (enabled) {
                 mHintManager->DoHint("SUSTAINED_PERFORMANCE");
+            } else {
+                mHintManager->EndHint("SUSTAINED_PERFORMANCE");
             }
-            mSustainedPerfModeOn = true;
+            mSustainedPerfModeOn = enabled;
             break;
         case Mode::LAUNCH:
             if (mSustainedPerfModeOn) {
