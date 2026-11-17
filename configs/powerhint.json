@@ -58,11 +58,11 @@
       "Name": "GPUMinFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
-        "266000000",
+        "647000000",
         "465000000",
-        "647000000"
+        "266000000"
       ],
-      "DefaultIndex": 0,
+      "DefaultIndex": 2,
       "ResetOnInit": true
     },
     {
@@ -130,11 +130,11 @@
       "Name": "CPUBWMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,cpubw/min_freq",
       "Values": [
-        "762",
+        "6881",
         "2929",
-        "6881"
+        "762"
       ],
-      "DefaultIndex": 0,
+      "DefaultIndex": 2,
       "ResetOnInit": true
     },
     {
