@@ -97,16 +97,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "SchedBoost",
-      "Path": "/proc/sys/kernel/sched_boost",
-      "DefaultIndex": 0,
-      "Values": [
-        "0",
-        "1"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "CPUBWHystTriggerCount",
       "Path": "/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count",
       "Values": [
@@ -180,12 +170,6 @@
       "Node": "GPUMaxFreq",
       "Duration": 0,
       "Value": "647000000"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "SchedBoost",
-      "Duration": 1000,
-      "Value": "1"
     },
     {
       "PowerHint": "INTERACTION",
@@ -276,12 +260,6 @@
       "Node": "GPUMinFreq",
       "Duration": 2000,
       "Value": "465000000"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "SchedBoost",
-      "Duration": 2000,
-      "Value": "1"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
