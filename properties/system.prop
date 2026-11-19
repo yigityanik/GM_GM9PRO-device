@@ -14,6 +14,7 @@ debug.sf.enable_hwc_vds=1
 debug.sf.hw=1
 debug.sf.latch_unsignaled=1
 persist.demo.hdmirotationlock=false
+debug.sf.disable_backpressure=1
 
 #Property to enable display default color mode
 vendor.display.enable_default_color_mode=1
