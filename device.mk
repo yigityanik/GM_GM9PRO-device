@@ -16,9 +16,11 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.1-impl \
+    audio.a2dp.default \
     audio.primary.sdm660 \
     audio.r_submix.default \
     audio.usb.default \
+    liba2dpoffload \
     libexthwplugin \
     libhdmiedid \
     libhfp \
@@ -57,6 +59,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Bootanimation
