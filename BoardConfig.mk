@@ -128,3 +128,6 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit vendor
 include vendor/GM/GM9PRO_sprout/BoardConfigVendor.mk
+
+# Inherit dolby
+-include vendor/dolby/BoardConfigVendor.mk
