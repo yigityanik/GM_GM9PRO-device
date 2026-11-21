@@ -125,5 +125,5 @@ persist.chg.max_volt_mv=9000
 vendor.bluetooth.soc=cherokee
 
 ## Android One Experience device version
-androidone.experience.device.version=R.9PR.1118
+androidone.experience.device.version=R.9PR.1121.T-s
 ## device version end
