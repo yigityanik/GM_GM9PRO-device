@@ -130,6 +130,7 @@ ro.bluetooth.library_name=libbluetooth_qti.so
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
 persist.vendor.qcom.bluetooth.enable.splita2dp=true
 vendor.audio.feature.a2dp_offload.enable=true
+persist.vendor.bt.a2dp.aac_whitelist=false
 
 ## Android One Experience device version
 androidone.experience.device.version=R.9PR.1121.T-s
