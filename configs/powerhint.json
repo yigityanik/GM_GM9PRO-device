@@ -128,6 +128,16 @@
       "ResetOnInit": true
     },
     {
+      "Name": "GPUBWMinFreq",
+      "Path": "/sys/class/devfreq/soc:qcom,gpubw/min_freq",
+      "Values": [
+        "5931",
+        "0"
+      ],
+      "DefaultIndex": 1,
+      "ResetOnInit": true
+    },
+    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -173,6 +183,12 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "GPUBWMinFreq",
+      "Duration": 1000,
+      "Value": "5931"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 1000,
       "Value": "1401600"
@@ -194,6 +210,12 @@
       "Node": "CPUBWMinFreq",
       "Duration": 1000,
       "Value": "2929"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "GPUBWMinFreq",
+      "Duration": 2000,
+      "Value": "5931"
     },
     {
       "PowerHint": "LAUNCH",
